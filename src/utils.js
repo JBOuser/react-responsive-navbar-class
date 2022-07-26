@@ -10,4 +10,12 @@ function capitalizeLine(line){
     }).join(" ")
 }
 
-export {capitalizeLine};
+function trimLine(line){
+    return line.replace(" ","");
+}
+
+function asPath(line){
+    return "/"+line;
+}
+
+export {capitalizeLine, trimLine, asPath};

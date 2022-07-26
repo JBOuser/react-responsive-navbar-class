@@ -1,0 +1,13 @@
+export const SIGN_IN_PAGE = "sign in page";
+export const ABOUT_US = "about us";
+export const CONTACT_US = "contact us";
+export const CURRENT_YEAR = new Date().getFullYear();
+export const ALL_RIGHTS_RESERVED = "all rights reserved";
+export const FACEBOOK = "Facebook";
+export const INSTAGRAM = "Instagram";
+export const YOUTUBE = "Youtube";
+export const SIGN_IN_TO_YOUR_ACCOUNT = "sign in to your account";
+export const EMAIL = "email";
+export const PASSWORD = "password";
+export const CONTINUE = "continue";
+export const FORGOT_PASSWORD = "forgot password";

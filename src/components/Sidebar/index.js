@@ -1,38 +1,46 @@
 import React from 'react';
-import { ABOUT, MAIN, SIGNIN, SIGNUP } from '../../constants/MenuOptions';
-import { capitalizeLine } from '../../utils';
+import { Component } from 'react';
+import { MAIN, SERVICES, SIGN_UP, SIGN_IN, SOCIAL } from '../Navbar/NavbarConstants';
+import capitalizeName, { asPath, capitalizeLine, trimLine } from '../../utils';
 import {
     SidebarContainer, Icon, CloseIcon,
     SidebarWrapper, SidebarMenu, SidebarLink,
     SidebarBtnWrap, SidebarRoute
 } from './SidebarElements';
 
-const Sidebar = ({isOpen, toggle}) => {
-  return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-        <Icon onclick={toggle}>
-            <CloseIcon/>
-        </Icon>
-        <SidebarWrapper>
-            <SidebarMenu>
-                <SidebarLink to="main">
-                    {capitalizeLine(MAIN)}
-                </SidebarLink>
-                <SidebarLink to="about">
-                    {capitalizeLine(ABOUT)}
-                </SidebarLink>
-                <SidebarLink to="signup">
-                    {capitalizeLine(SIGNUP)}
-                </SidebarLink>
-            </SidebarMenu>
-            <SidebarBtnWrap>
-                <SidebarRoute to="/signin">
-                    {capitalizeLine(SIGNIN)}
-                </SidebarRoute>
-            </SidebarBtnWrap>
-        </SidebarWrapper>
-    </SidebarContainer>
-  )
+class Sidebar extends Component {
+
+    render(){
+        const {is_open, toggle} = this.props;
+        return (
+            <SidebarContainer is_open={is_open} onClick={toggle}>
+                <Icon onclick={toggle}>
+                    <CloseIcon/>
+                </Icon>
+                <SidebarWrapper>
+                    <SidebarMenu>
+                        <SidebarLink to={MAIN} onClick={toggle}>
+                            {capitalizeName(MAIN)}
+                        </SidebarLink>
+                        <SidebarLink to={SERVICES} onClick={toggle}>
+                            {capitalizeName(SERVICES)}
+                        </SidebarLink>
+                        <SidebarLink to={trimLine(SIGN_UP)} onClick={toggle}>
+                            {capitalizeName(SIGN_UP)}
+                        </SidebarLink>
+                        <SidebarLink to={SOCIAL} onClick={toggle}>
+                            {capitalizeName(SOCIAL)}
+                        </SidebarLink>
+                    </SidebarMenu>
+                    <SidebarBtnWrap>
+                        <SidebarRoute to={asPath(trimLine(SIGN_IN))}>
+                            {capitalizeLine(SIGN_IN)}
+                        </SidebarRoute>
+                    </SidebarBtnWrap>
+                </SidebarWrapper>
+            </SidebarContainer>
+        )
+    }
 }
 
 export default Sidebar;

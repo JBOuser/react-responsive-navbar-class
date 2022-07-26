@@ -1,12 +1,12 @@
-import { FaBars } from 'react-icons/fa';
-import { NavLink as Link } from 'react-router-dom';
+//import { FaBars } from 'react-icons/fa';
+//import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({is_navbar_transparent}) => (is_navbar_transparent ? 'transparent' : '#000')};
   height: 80px;
   /* margin-top: -80px; */
   display: flex;
@@ -30,6 +30,11 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+`;
+
+export const NavIcon = styled(LinkScroll)`
+cursor: pointer;
+margin-left: 3px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
