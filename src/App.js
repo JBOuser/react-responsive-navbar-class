@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 //import Navbar from './components/Navbar';
 import { 
-  BrowserRouter as Router, //used in a 'development' environment
-  HashRouter, //used in a 'production' environment
+  //BrowserRouter as Router, //used in a 'development' environment
   Switch, Route 
 } from 'react-router-dom';
 import Home from './pages/Home';
@@ -15,13 +14,11 @@ class App extends Component{
   render(){
     return (
       // <Router>
-      <HashRouter>
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path={asPath(trimLine(SIGN_IN))} component={Signin} exact />
         </Switch>
-        {/* <Home/> */}
-      </HashRouter>
+        //<Home/>
       // </Router>
     );
   }

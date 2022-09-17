@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { 
+  HashRouter //used in a 'production' environment
+} from 'react-router-dom';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
