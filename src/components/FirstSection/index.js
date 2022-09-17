@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { RightArrowButton } from '../Buttons/MainButtons';
 import { 
-    ID, 
     DISCOVER_YOUR_REALITY_BEYOND_THE_LIMITS, 
     GET_STARTED, 
     VIRTUAL_MAGIC_WORLD 
@@ -38,9 +37,10 @@ class FirstSection extends Component {
     render(){
 
         const {hover} = this.state;
+        const {is_large_height} = this.props;
 
         return (
-            <FirstContainer id={ID}>
+            <FirstContainer is_large_height={is_large_height}>
                 <FirstBg>
                     <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
                 </FirstBg>

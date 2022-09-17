@@ -11,7 +11,8 @@ export const FirstContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 900px;
+    height: ${({is_large_height}) => (is_large_height ? '750px' : '650px')};
+    //height: 900px;
     position: relative;
     z-index: 1;
 

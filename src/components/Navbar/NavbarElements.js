@@ -33,8 +33,8 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavIcon = styled(LinkScroll)`
-cursor: pointer;
-margin-left: 3px;
+  cursor: pointer;
+  margin-left: 3px;
 `;
 
 export const NavLogo = styled(LinkRouter)`

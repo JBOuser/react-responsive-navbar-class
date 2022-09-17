@@ -35,7 +35,7 @@ export class InfoSection extends Component {
     const {
       id,
       is_light_bg, is_light_txt, 
-      is_dark_btn, is_dark_txt, 
+      is_dark_txt, 
       top_txt, header_txt, description_txt, btn_txt, 
       img_first, img, alt
     } = this.props;
@@ -54,7 +54,7 @@ export class InfoSection extends Component {
                   <InfoBtnWrap>
                     
                     <DarkButton to="home"
-                      is_dark_btn={is_dark_btn}
+                      is_dark_btn="true"
                       onMouseEnter={this.onHover} 
                       onMouseLeave={this.onHover}
                     >

@@ -11,7 +11,7 @@ export const varsInfoSectionConsciousness = {
     id: capitalizeName(ID_ONE),
     is_light_bg: false,
     is_light_txt: false,
-    is_dark_btn: false,
+    //is_dark_btn: false,
     is_dark_txt: false,
     img_first: false,
 
@@ -27,7 +27,7 @@ export const varsInfoSectionAccount = {
     id: trimLine(ID_TWO),
     is_light_bg: true,
     is_light_txt: true,
-    is_dark_btn: true,
+    //is_dark_btn: true,
     is_dark_txt: true,
     img_first: true,
 
@@ -43,7 +43,7 @@ export const varsInfoSectionPower = {
     id: capitalizeName(ID_THREE),
     is_light_bg: true,
     is_light_txt: true,
-    is_dark_btn: true,
+    //is_dark_btn: true,
     is_dark_txt: false,
     img_first: false,
 
