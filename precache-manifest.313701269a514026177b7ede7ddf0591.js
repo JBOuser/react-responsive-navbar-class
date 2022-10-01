@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37dbe358445f97915955237aecb60a81",
+    "revision": "108124701b8af7887f72148957aeb1ee",
     "url": "/react-responsive-navbar-class/index.html"
   },
   {
-    "revision": "38ca199344040595a2cd",
+    "revision": "e5866380f7d85b36b3e9",
+    "url": "/react-responsive-navbar-class/static/css/2.7ac20baa.chunk.css"
+  },
+  {
+    "revision": "f98e0cf81442e2d7de4f",
     "url": "/react-responsive-navbar-class/static/css/main.cb669b7f.chunk.css"
   },
   {
-    "revision": "66fa19acd44c93c73a9f",
-    "url": "/react-responsive-navbar-class/static/js/2.0bbb025d.chunk.js"
+    "revision": "e5866380f7d85b36b3e9",
+    "url": "/react-responsive-navbar-class/static/js/2.36d0b0fa.chunk.js"
   },
   {
     "revision": "f7e623707d9b37a3821ec4c3548a4309",
-    "url": "/react-responsive-navbar-class/static/js/2.0bbb025d.chunk.js.LICENSE.txt"
+    "url": "/react-responsive-navbar-class/static/js/2.36d0b0fa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38ca199344040595a2cd",
-    "url": "/react-responsive-navbar-class/static/js/main.4ae642ad.chunk.js"
+    "revision": "f98e0cf81442e2d7de4f",
+    "url": "/react-responsive-navbar-class/static/js/main.733abda5.chunk.js"
   },
   {
     "revision": "51e1bfd90308252972d6",
