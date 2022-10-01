@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "108124701b8af7887f72148957aeb1ee",
+    "revision": "268df161bf15ffedbf39bf6034f70ba6",
     "url": "/react-responsive-navbar-class/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-responsive-navbar-class/static/css/2.7ac20baa.chunk.css"
   },
   {
-    "revision": "f98e0cf81442e2d7de4f",
+    "revision": "ef67a297bdc46e75eb91",
     "url": "/react-responsive-navbar-class/static/css/main.cb669b7f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-responsive-navbar-class/static/js/2.36d0b0fa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f98e0cf81442e2d7de4f",
-    "url": "/react-responsive-navbar-class/static/js/main.733abda5.chunk.js"
+    "revision": "ef67a297bdc46e75eb91",
+    "url": "/react-responsive-navbar-class/static/js/main.6a4b9070.chunk.js"
   },
   {
     "revision": "51e1bfd90308252972d6",
