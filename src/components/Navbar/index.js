@@ -43,7 +43,24 @@ class Navbar extends Component {
     window.addEventListener('scroll', setNavbarTransparent);
   },[])
   */
+
+  //Apply style over clicked Link
+  setActiveLink = (e) => {
+    const active = "active";
+
+    //get all <a/> from <ul id="nav_menu"/>
+    const links = document.getElementById("nav_menu").getElementsByTagName("a");
+
+    //remove "active" from all <a/>. Each <a/> is inside an <li/>
+    Array.from(links).forEach(li => {
+      li.classList.remove(active);
+    })
+
+    //add "active" to clicked <a/>
+    e.target.classList.add(active);
+  } 
   
+
   render(){
 
     //const {is_navbar_transparent} = this.state;
@@ -69,26 +86,31 @@ class Navbar extends Component {
               <FaBars />
             </MobileIcon>
           
-            <NavMenu>
+            <NavMenu id="nav_menu">
               <NavItem>
                 {/* Apply chosen option marked */}
-                <NavLinks to={MAIN}
+                <NavLinks 
+                  id={`nav_${MAIN}`}
+                  to={MAIN}
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
-                >
-                  {capitalizeName(MAIN)}</NavLinks>
+                  onClick={e => this.setActiveLink(e)}
+                >{capitalizeName(MAIN)}</NavLinks>
               </NavItem>
               <NavItem>
                 {/* Apply chosen option marked */}
-                <NavLinks to={SERVICES}
+                <NavLinks 
+                  id={`nav_${SERVICES}`}
+                  to={SERVICES}
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
+                  onClick={e => this.setActiveLink(e)}
                 >{capitalizeName(SERVICES)}</NavLinks>
               </NavItem>
               {/*
@@ -98,22 +120,28 @@ class Navbar extends Component {
               */}
               <NavItem>
                 {/* Apply chosen option marked */}
-                <NavLinks to={trimLine(SIGN_UP)}
+                <NavLinks 
+                  id={`nav_${SIGN_UP}`}
+                  to={trimLine(SIGN_UP)}
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
-                  offset={-80}                
+                  offset={-80}            
+                  onClick={e => this.setActiveLink(e)}
                 >{capitalizeLine(SIGN_UP)}</NavLinks>
               </NavItem>
               <NavItem>
                 {/* Apply chosen option marked */}
-                <NavLinks to={SOCIAL}
+                <NavLinks 
+                  id={`nav_${SOCIAL}`}
+                  to={SOCIAL}
                   smooth={true}
                   duration={500}
                   spy={false}
                   exact='true'
                   offset={-80}                
+                  onClick={e => this.setActiveLink(e)}
                 >{capitalizeName(SOCIAL)}</NavLinks>
               </NavItem>
             </NavMenu>

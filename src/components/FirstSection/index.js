@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import { RightArrowButton } from '../Buttons/MainButtons';
+// import { ToastContainer as Toast, toast } from 'react-toast';
+import { ToastContainer as Toast, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; //styles to Toast
 import { 
     DISCOVER_YOUR_REALITY_BEYOND_THE_LIMITS, 
     GET_STARTED, 
@@ -34,6 +37,19 @@ class FirstSection extends Component {
             this.setState({hover: true});        
     }
 
+    showToast = (text) => {
+        toast.success(
+            <div style={{textAlign:"center"}}>{text}</div>,
+            {
+                position: toast.POSITION.TOP_CENTER,
+                autoClose: 1500,
+                closeOnClick: true,
+                icon: false,
+                hideProgressBar: true
+            }
+        );
+    }
+
     render(){
 
         const {hover} = this.state;
@@ -52,16 +68,24 @@ class FirstSection extends Component {
                         {capitalizeLine(DISCOVER_YOUR_REALITY_BEYOND_THE_LIMITS)}
                     </FirstParagraph>
                     <FirstBtnWrapper>
-                        <RightArrowButton to="signup" 
+                        <RightArrowButton to="#" 
                             onMouseEnter={this.onHover} 
                             onMouseLeave={this.onHover}
                             is_big='true'
                             is_dark='true'
+                            onClick={() => this.showToast('WELCOME 🔥')}
                         >
                             {capitalizeLine(GET_STARTED)} 
                             {hover ? <ArrowForward /> : <ArrowRight />}
                         </RightArrowButton>
                     </FirstBtnWrapper>
+                    {/* <Toast 
+                        position = "bottom-center" 
+                        delay = {2000} 
+                    /> */}
+                    
+                    <Toast />
+                    {/* {"updated .Toastify__toast-container--top-center from 'react-toastify/dist/ReactToastify.css'"} */}
                 </FirstContent>
             </FirstContainer>
         )

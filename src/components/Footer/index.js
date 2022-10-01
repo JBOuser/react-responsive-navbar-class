@@ -26,7 +26,7 @@ export class Footer extends Component {
             <FooterLinksWrapper>
                 <FooterLinkItems>
                     <FooterLinkTitle>{capitalizeLine(ABOUT_US)}</FooterLinkTitle>
-                    <FooterLink to={MAIN}>{capitalizeName(MAIN)}</FooterLink>
+                    {/* <FooterLink to={MAIN}>{capitalizeName(MAIN)}</FooterLink> */}
                     <FooterLink to={SERVICES}>{capitalizeName(SERVICES)}</FooterLink>
                     <FooterLink to={trimLine(SIGN_UP)}>{capitalizeLine(SIGN_UP)}</FooterLink>
                 </FooterLinkItems>
@@ -35,8 +35,8 @@ export class Footer extends Component {
                 <FooterLinkItems>
                     <FooterLinkTitle>{capitalizeLine(CONTACT_US)}</FooterLinkTitle>
                     <FooterLink to={MAIN}>{capitalizeName(MAIN)}</FooterLink>
-                    <FooterLink to={SERVICES}>{capitalizeName(SERVICES)}</FooterLink>
-                    <FooterLink to={trimLine(SIGN_UP)}>{capitalizeLine(SIGN_UP)}</FooterLink>
+                    {/* <FooterLink to={SERVICES}>{capitalizeName(SERVICES)}</FooterLink>
+                    <FooterLink to={trimLine(SIGN_UP)}>{capitalizeLine(SIGN_UP)}</FooterLink> */}
                 </FooterLinkItems>
             </FooterLinksWrapper>
         </FooterLinksContainer>
