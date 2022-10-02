@@ -41,7 +41,7 @@ class FirstSection extends Component {
         toast.success(
             <div style={{textAlign:"center"}}>{text}</div>,
             {
-                position: toast.POSITION.TOP_CENTER,
+                position: toast.POSITION.BOTTOM_CENTER,
                 autoClose: 1500,
                 closeOnClick: true,
                 icon: false,
