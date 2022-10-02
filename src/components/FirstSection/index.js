@@ -73,7 +73,7 @@ class FirstSection extends Component {
                             onMouseLeave={this.onHover}
                             is_big='true'
                             is_dark='true'
-                            onClick={() => this.showToast('WELCOME 🔥')}
+                            onClick={() => this.showToast('🔥 WELCOME :D 🔥')}
                         >
                             {capitalizeLine(GET_STARTED)} 
                             {hover ? <ArrowForward /> : <ArrowRight />}
