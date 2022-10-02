@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-responsive-navbar-class/static/css/main.cb669b7f.chunk.css",
-    "main.js": "/react-responsive-navbar-class/static/js/main.a442b372.chunk.js",
-    "main.js.map": "/react-responsive-navbar-class/static/js/main.a442b372.chunk.js.map",
+    "main.js": "/react-responsive-navbar-class/static/js/main.09845c18.chunk.js",
+    "main.js.map": "/react-responsive-navbar-class/static/js/main.09845c18.chunk.js.map",
     "runtime-main.js": "/react-responsive-navbar-class/static/js/runtime-main.c37e380f.js",
     "runtime-main.js.map": "/react-responsive-navbar-class/static/js/runtime-main.c37e380f.js.map",
-    "static/css/2.7ac20baa.chunk.css": "/react-responsive-navbar-class/static/css/2.7ac20baa.chunk.css",
-    "static/js/2.36d0b0fa.chunk.js": "/react-responsive-navbar-class/static/js/2.36d0b0fa.chunk.js",
-    "static/js/2.36d0b0fa.chunk.js.map": "/react-responsive-navbar-class/static/js/2.36d0b0fa.chunk.js.map",
+    "static/css/2.a63ca25f.chunk.css": "/react-responsive-navbar-class/static/css/2.a63ca25f.chunk.css",
+    "static/js/2.6ac1d424.chunk.js": "/react-responsive-navbar-class/static/js/2.6ac1d424.chunk.js",
+    "static/js/2.6ac1d424.chunk.js.map": "/react-responsive-navbar-class/static/js/2.6ac1d424.chunk.js.map",
     "index.html": "/react-responsive-navbar-class/index.html",
-    "precache-manifest.d99c159400537f23435d72035d5103e9.js": "/react-responsive-navbar-class/precache-manifest.d99c159400537f23435d72035d5103e9.js",
+    "precache-manifest.1b921cffbf8b6cc91f2669be0bd8be6b.js": "/react-responsive-navbar-class/precache-manifest.1b921cffbf8b6cc91f2669be0bd8be6b.js",
     "service-worker.js": "/react-responsive-navbar-class/service-worker.js",
-    "static/css/2.7ac20baa.chunk.css.map": "/react-responsive-navbar-class/static/css/2.7ac20baa.chunk.css.map",
+    "static/css/2.a63ca25f.chunk.css.map": "/react-responsive-navbar-class/static/css/2.a63ca25f.chunk.css.map",
     "static/css/main.cb669b7f.chunk.css.map": "/react-responsive-navbar-class/static/css/main.cb669b7f.chunk.css.map",
-    "static/js/2.36d0b0fa.chunk.js.LICENSE.txt": "/react-responsive-navbar-class/static/js/2.36d0b0fa.chunk.js.LICENSE.txt",
+    "static/js/2.6ac1d424.chunk.js.LICENSE.txt": "/react-responsive-navbar-class/static/js/2.6ac1d424.chunk.js.LICENSE.txt",
     "static/media/first_video.mp4": "/react-responsive-navbar-class/static/media/first_video.b5a70d6c.mp4",
     "static/media/s1.svg": "/react-responsive-navbar-class/static/media/s1.7d3e4227.svg",
     "static/media/s2.svg": "/react-responsive-navbar-class/static/media/s2.1fd3d4af.svg",
@@ -25,9 +25,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c37e380f.js",
-    "static/css/2.7ac20baa.chunk.css",
-    "static/js/2.36d0b0fa.chunk.js",
+    "static/css/2.a63ca25f.chunk.css",
+    "static/js/2.6ac1d424.chunk.js",
     "static/css/main.cb669b7f.chunk.css",
-    "static/js/main.a442b372.chunk.js"
+    "static/js/main.09845c18.chunk.js"
   ]
 }
